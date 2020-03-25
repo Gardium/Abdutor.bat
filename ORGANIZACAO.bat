@@ -1,8 +1,8 @@
-md ORGANIZACAO
+md ORGANIZACAO ## criar organização
 
-cd ORGANIZACAO
+cd ORGANIZACAO ## entrar no diretório
 
-md DOCUMENTOS
+md DOCUMENTOS ## criar diretórios
 md IMAGENS
 md PSD's
 md CDR's
@@ -14,8 +14,8 @@ md CERTIFICADOS
 md BASES
 md txts
 cd..
-:LOOP
-TIMEOUT /T 30
+:LOOP ## ponto de retorno
+TIMEOUT /T 900 ## esperar 900 segundos
 move *.txt     organizacao\txts
 move *.sql     organizacao\bases   
 move *.pfx     organizacao\certificados
@@ -39,4 +39,4 @@ move *.mp4     organizacao\videos
 move *.mkv     organizacao\videos
 move *.avi     organizacao\videos
 move *.ai      organizacao\Ai's
-goto :LOOP
+goto :LOOP ## volte ao loop
