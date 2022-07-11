@@ -3,6 +3,7 @@ md  D:\ABDUTOR
 cd /d D:\ABDUTOR
 
 md DOCUMENTOS
+md TESTE MESMO
 md IMAGENS
 md PSD's
 md CDR's
